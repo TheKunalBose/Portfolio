@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "/Users/kunal/MySoft/portfolio_web/utils/cn.ts";
+import { cn } from "/Users/kunal/MySoft/portfolio/utils/cn.ts";
 
 type SpotlightProps = {
   className?: string;

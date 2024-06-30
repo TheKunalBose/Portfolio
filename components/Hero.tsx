@@ -1,3 +1,5 @@
+import { FaLocationArrow } from 'react-icons/fa'
+import MaggicButton from './ui/MaggicButton'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 
@@ -15,7 +17,7 @@ const Hero= () => {
         h-[80vh] w-[50vh]" fill="white"/>
       </div>
       <div className="h-screen w-full dark:bg-black-100 
-      bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2] 
+      bg-white  dark:bg-grid-white/[0.07] bg-grid-black/[0.2] 
        flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 
         flex items-center justify-center dark:bg-black-100 bg-white 
@@ -38,7 +40,12 @@ const Hero= () => {
             Hi I'm Kunal Bose, a Student and a passionate Developer 
             from India
           </p>
-
+          <a href="#about">
+            <MaggicButton 
+              title="Show my work" 
+              icon={<FaLocationArrow/>} 
+              position={'right'} />
+          </a>
         </div>
       </div>
     </div>

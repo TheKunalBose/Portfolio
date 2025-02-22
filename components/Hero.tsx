@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! there I'm Kunal Bose, a student and a passionate asspiring
+            Hey! I'm Kunal Bose, a student and a passionate asspiring
             software engineer based in India 🇮🇳
           </p>
 

@@ -140,21 +140,21 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "AWS",
+    img: "/AWS.svg",
+    nameImg: "/AWS.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "python",
+    img: "/python.svg",
+    nameImg: "/python.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
     img: "/host.svg",
-    nameImg: "/hostName.svg",
+    nameImg: "/host.svg",
   },
   {
     id: 4,

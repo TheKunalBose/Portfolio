@@ -109,19 +109,19 @@ export const testimonials = [
     quote:
       "ANALYSIS DOMAIN",
     name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
-    // title: "Title 2",
+    title: ".",
   },
   { 
     quote:
       "ClOUD DOMAIN",
     name: "Exploring and learning about new cloud domains to enhance my expertise in cloud technologies and services.",
-    // title: "Title 2",
+    title: ".",
   },
   {
     quote:
       "DESIGN DOMAIN",
     name: "Diving into emerging design technologies to refine my expertise in modern creative solutions and UI/UX innovation.",
-    // title: "te",
+    title: ".",
   },
   // {
   //   quote:

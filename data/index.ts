@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Updates", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,32 +72,32 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "AWS Multi-Refion Architecture",
+    des: "an active-active AWS multi-region architecture using Terraform. It includes modular infrastructure, automated Jenkins installation, and a CI/CD pipeline for seamless deployment",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://github.com/TheKunalBose/AWS-Architechure-MultiRegion",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Shoppy",
+    des: "Fully responsive and customisable Admin dashboard created using advanced Reactjs, React Context APIs, Syncfusion and Tailwind CSS",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "GitReverb",
+    des: "Backend is developed with Flask the python library and GitHub APIs have been used and the front-end has been made with html css",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Credit Card Fraud Detectector",
+    des: "Prediction model which predicts the safety of the transaction with some user input.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
@@ -107,59 +107,59 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "hooo1",
-    name: "Michael Johnson11",
-    title: "Director of AlphaStream Technologies",
+      "ANALYSIS DOMAIN",
+    name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
+    // title: "Title 2",
+  },
+  { 
+    quote:
+      "ClOUD DOMAIN",
+    name: "Exploring and learning about new cloud domains to enhance my expertise in cloud technologies and services.",
+    // title: "Title 2",
   },
   {
     quote:
-      "hooo2",
-    name: "Michael Johnson22",
-    title: "Director of AlphaStream Technologies",
+      "DESIGN DOMAIN",
+    name: "Diving into emerging design technologies to refine my expertise in modern creative solutions and UI/UX innovation.",
+    // title: "te",
   },
-  {
-    quote:
-      "hooo3",
-    name: "Michael Johnson33",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "hooo4",
-    name: "Michael Johnson44",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "hooo5",
-    name: "Michael Johnson55",
-    title: "Director of AlphaStream Technologies",
-  },
+  // {
+  //   quote:
+  //     "Update 4",
+  //   name: "Michael Johnson44",
+  //   // title: "Director of AlphaStream Technologies",
+  // },
+  // {
+  //   quote:
+  //     "Update 5",
+  //   name: "Michael Johnson55",
+  //   // title: "Director of AlphaStream Technologies",
+  // },
 ];
 
 export const companies = [
   {
     id: 1,
     name: "AWS",
-    img: "/AWS.svg",
+    img: "/aws.png",
     nameImg: "/AWS.svg",
   },
   {
     id: 2,
     name: "python",
-    img: "/python.svg",
+    img: "/python.png",
     nameImg: "/python.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/host.svg",
+    name: "git",
+    img: "/git.png",
+    nameImg: "/hostNAME.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "terraform",
+    img: "/terraform.png",
     nameImg: "/streamName.svg",
   },
   {

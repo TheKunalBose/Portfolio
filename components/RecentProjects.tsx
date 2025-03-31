@@ -3,26 +3,27 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
+import { PinContainer } from "./ui/3d-pin";
+import { link } from "node:fs";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.title}
+              href={item.link}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -65,12 +66,12 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                {/* <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Explore more
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div> */}
+                </div>
               </div>
             </PinContainer>
           </div>

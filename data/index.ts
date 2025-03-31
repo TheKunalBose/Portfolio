@@ -84,7 +84,7 @@ export const projects = [
     des: "Fully responsive and customisable Admin dashboard created using advanced Reactjs, React Context APIs, Syncfusion and Tailwind CSS",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/TheKunalBose/Shoppy",
   },
   {
     id: 3,

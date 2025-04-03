@@ -108,8 +108,8 @@ export const testimonials = [
   {
     quote:
       "ANALYSIS DOMAIN",
-    name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
-    title: ".",
+    // name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
+   
   },
   { 
     quote:

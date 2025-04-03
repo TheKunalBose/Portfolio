@@ -75,7 +75,7 @@ export const projects = [
     title: "AWS Multi-Refion Architecture",
     des: "an active-active AWS multi-region architecture using Terraform. It includes modular infrastructure, automated Jenkins installation, and a CI/CD pipeline for seamless deployment",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["AWS.png", "terraform.png", "Jenkins.svg", "Bash.svg", "/Ubuntu.png"],
     link: "https://github.com/TheKunalBose/AWS-Architechure-MultiRegion",
   },
   {
@@ -83,24 +83,24 @@ export const projects = [
     title: "Shoppy",
     des: "Fully responsive and customisable Admin dashboard created using advanced Reactjs, React Context APIs, Syncfusion and Tailwind CSS",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["re.svg", "/tail.svg", "JavaScript.svg", "Syncfusion.png"],
     link: "https://github.com/TheKunalBose/Shoppy",
   },
   {
     id: 3,
-    title: "GitReverb",
-    des: "Backend is developed with Flask the python library and GitHub APIs have been used and the front-end has been made with html css",
+    title: "Terraform-CI-CD-Pipeline-Azure",
+    des: "The terraform-CICD repository automates infrastructure deployment using Terraform, streamlining provisioning and management. It defines network resources as code, ensuring consistency, scalability, and efficient CI/CD workflows. The project enhances infrastructure automation by reducing manual effort and enabling seamless deployments",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: ["terraform.png", "Azure.png", "Bash.svg", "Ubuntu.png"],
+    link: "https://github.com/TheKunalBose/Terraform-CI-CD-Pipeline-Azure",
   },
   {
     id: 4,
     title: "Credit Card Fraud Detectector",
     des: "Prediction model which predicts the safety of the transaction with some user input.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: ["python.png", "Scikit-learn.svg", "Pandas.png", "NumPy.svg", "Matplotlib.svg"],
+    link: "https://github.com/TheKunalBose/Credit-Card-Fraud-Detector-",
   },
 ];
 
@@ -108,7 +108,7 @@ export const testimonials = [
   {
     quote:
       "ANALYSIS DOMAIN",
-    // name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
+    name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
    
   },
   { 
@@ -146,15 +146,15 @@ export const companies = [
   },
   {
     id: 2,
-    name: "python",
-    img: "/python.png",
-    nameImg: "/python.svg",
+    name: "jenkins",
+    img: "/Jenkins.svg",
+    nameImg: "/Jenkins.svg",
   },
   {
-    id: 3,
-    name: "git",
-    img: "/git.png",
-    nameImg: "/hostNAME.svg",
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
   },
   {
     id: 4,
@@ -163,10 +163,10 @@ export const companies = [
     nameImg: "/streamName.svg",
   },
   {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    id: 3,
+    name: "azure",
+    img: "/Azure.png",
+    nameImg: "/Azure.png",
   },
 ];
 

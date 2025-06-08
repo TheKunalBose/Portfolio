@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Modernism meets Minimalism
           </p>
 
           {/**
@@ -52,13 +52,13 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Turning vision into reality with precision and passion"
+            // words="Turning vision into reality with precision and passion"
+            words="Hi there!, I&apos;m Kunal Bose"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hey! I'm Kunal Bose, a student and a passionate asspiring
-            software engineer based in India 🇮🇳
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
+          {'Third&mdash;year B.Tech Computer Science student, passionate DevOps and Cloud enthusiast, and aspiring software engineer based in India 🇮🇳'}
           </p>
 
           <a href="#about">

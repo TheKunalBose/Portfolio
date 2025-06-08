@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Updates", link: "#testimonials" },
+  { name: "Insight", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -107,19 +107,49 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "ANALYSIS DOMAIN",
-    name: "Working on a project in the analysis domain, leveraging data insights and statistical modeling to drive informed decision-making.",
+      "Full-Stack Web Development",
+    name: "Proficient in building scalable web applications using React.js for the frontend and Node.js for the backend, following modular and RESTful architecture.",
    
   },
   { 
     quote:
-      "ClOUD DOMAIN",
-    name: "Exploring and learning about new cloud domains to enhance my expertise in cloud technologies and services.",
+      "Infrastructure as Code (IaC)",
+    name: "Experienced in using Terraform to provision and manage cloud infrastructure declaratively, ensuring consistency and repeatability.",
     title: ".",
+  },
+  { 
+    quote:
+      "Containerization & Orchestration",
+    name: "Hands-on expertise with Docker for containerizing applications and Kubernetes for orchestrating multi-container workloads in cloud environments.",
+    
+  },
+  { 
+    quote:
+      "CI/CD Automation",
+    name: "Implemented automated deployment pipelines using Jenkins, enabling continuous integration and delivery across development workflows.",
+   
+  },
+  { 
+    quote:
+      "Cloud Platforms (AWS & Azure)",
+    name: "Worked with both AWS and Azure platforms for deploying infrastructure and applications; experienced with services like EC2, S3, EKS, IAM (AWS) and Azure Resource Manager, AKS, and DevOps Pipelines (Azure).",
+   
+  },
+  { 
+    quote:
+      "Version Control (Git & GitHub)",
+    name: "Proficient in using Git for source code management and GitHub for collaborative development and CI/CD integration.",
+    
+  },
+  { 
+    quote:
+      "Monitoring & Logging",
+    name: "Integrated basic monitoring tools and logging solutions to track application performance and ensure system reliability.",
+    
   },
   {
     quote:
-      "CREATIVE",
+      "Creative",
     name: "Possesses intermediate proficiency in design and editing, with hands-on experience using tools such as DaVinci Resolve, Figma, and Canva",
     title: "experience in internship, small scale events and University level activities",
   },

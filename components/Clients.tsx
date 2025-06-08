@@ -9,8 +9,8 @@ const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Live  
-        <span className="text-purple"> Updates</span>
+        Insights  
+        <span className="text-purple"> Vault</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -35,7 +35,7 @@ const Clients = () => {
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
-                <img
+                <image
                   src={company.img}
                   alt={company.name}
                   className="md:w-22 w-20"

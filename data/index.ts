@@ -119,9 +119,9 @@ export const testimonials = [
   },
   {
     quote:
-      "DESIGN DOMAIN",
-    name: "Diving into emerging design technologies to refine my expertise in modern creative solutions and UI/UX innovation.",
-    title: ".",
+      "CREATIVE",
+    name: "Possesses intermediate proficiency in design and editing, with hands-on experience using tools such as DaVinci Resolve, Figma, and Canva",
+    title: "experience in internship, small scale events and University level activities",
   },
   // {
   //   quote:

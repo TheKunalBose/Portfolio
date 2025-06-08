@@ -28,8 +28,9 @@
     "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.177.0",
+    "three": "0.158.0",
     "three-globe": "^2.31.0",
+    "three-stdlib": "2.29.9",
     "vercel": "^34.0.0"
   },
   "devDependencies": {

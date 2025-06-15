@@ -53,7 +53,7 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             // words="Turning vision into reality with precision and passion"
-            words="Hi there!, I&apos;m Kunal Bose"
+            words="Hi there!, I'm Kunal Bose"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 

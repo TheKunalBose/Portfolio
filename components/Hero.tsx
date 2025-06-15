@@ -57,9 +57,9 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-          {'Third&mdash;year B.Tech Computer Science student, passionate DevOps and Cloud enthusiast, and aspiring software engineer based in India 🇮🇳'}
-          </p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
+              Third—year B.Tech Computer Science student, passionate DevOps and Cloud enthusiast, and aspiring software engineer based in India 🇮🇳
+            </p>
 
           <a href="#about">
             <MagicButton

@@ -3,7 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-import { PinContainer } from "./ui/3d-pin";
+import { PinContainer } from "./ui/3d-pin-client";
 import { link } from "node:fs";
 
 const RecentProjects = () => {

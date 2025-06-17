@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import Image from 'next/image';
+
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Python", "SQL", "Typescript"];
-  const rightLists = ["ReactJS", "NextJS", "AWS"];
+  const leftLists = ["ReactJS", "Express", "Typescript"];
+  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "kbose0204@gmail.com";
+    const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -91,10 +91,9 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <Image
+            <img
               src={img}
               alt={img}
-              fill
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
@@ -104,10 +103,9 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <Image
+            <img
               src={spareImg}
               alt={spareImg}
-              fill
               //   width={220}
               className="object-cover object-center w-full h-full"
             />

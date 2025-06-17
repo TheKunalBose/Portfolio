@@ -58,7 +58,7 @@ const Hero = () => {
           />
 
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-              Third—year B.Tech Computer Science student, passionate DevOps and Cloud enthusiast, and aspiring software engineer based in India
+              Third Year B.Tech Computer Science student, passionate DevOps and Cloud enthusiast, and aspiring software engineer based in India
             </p>
 
           <a href="#about">

@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "Self2.jpeg",
+    img: "/Self2.jpeg",
     spareImg: "",
   },
   {
@@ -72,6 +72,22 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "StackForge-Terraform-Infra",
+    des: "An AWS EKS-based infrastructure built with Terraform. Features modular architecture, automated Jenkins setup, and CI/CD pipeline for seamless Kubernetes deployments.",
+    img: "",
+    iconLists: ["terraform.png","AWS.png","Jenkins.svg","YAML logo.png"],
+    link: "https://github.com/TheKunalBose/StackForge-Terraform-Infra",
+  },
+  {
+    id: 2,
+    title: "StackForge-k8s-Deployement ",
+    des: "Production-grade Kubernetes deployment for StackForge on AWS EKS with secure secrets, PostgreSQL, Ingress routing, health checks, and rolling updates.",
+    img: "",
+    iconLists: ["k8s.png","EKS.png","AWS.png","re.svg","Node.png","Redis.png","PostgreSQL.png"],
+    link: "https://github.com/TheKunalBose/StackForge-k8s-Deployement",
+  },
+  {
+    id: 3,
     title: "AWS Multi-Region Architecture",
     des: "an active-active AWS multi-region architecture using Terraform. It includes modular infrastructure, automated Jenkins installation, and a CI/CD pipeline for seamless deployment",
     img: "awsbg.jpg",
@@ -79,7 +95,7 @@ export const projects = [
     link: "https://github.com/TheKunalBose/AWS-Architechure-MultiRegion",
   },
   {
-    id: 2,
+    id: 4,
     title: "Shoppy_dashboard",
     des: "Fully responsive and customisable Admin dashboard created using advanced Reactjs, React Context APIs, Syncfusion and Tailwind CSS",
     img: "Shoppy.png",
@@ -87,7 +103,7 @@ export const projects = [
     link: "https://github.com/TheKunalBose/Shoppy_dashboard",
   },
   {
-    id: 3,
+    id: 5,
     title: "Terraform-CI-CD-Pipeline-Azure",
     des: "The terraform-CICD repository automates infrastructure deployment using Terraform, streamlining provisioning and management. It defines network resources as code, ensuring consistency, scalability, and efficient CI/CD workflows. The project enhances infrastructure automation by reducing manual effort and enabling seamless deployments",
     img: "azurebg.png",
@@ -95,7 +111,7 @@ export const projects = [
     link: "https://github.com/TheKunalBose/Terraform-CI-CD-Pipeline-Azure",
   },
   {
-    id: 4,
+    id: 6,
     title: "Credit Card Fraud Detectector",
     des: "Prediction model which predicts the safety of the transaction with some user input.",
     img: "ccfdbg.jpg",

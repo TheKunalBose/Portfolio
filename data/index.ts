@@ -131,7 +131,7 @@ export const testimonials = [
     quote:
       "Infrastructure as Code (IaC)",
     name: "Experienced in using Terraform to provision and manage cloud infrastructure declaratively, ensuring consistency and repeatability.",
-    title: ".",
+    // title: ".",
   },
   { 
     quote:
@@ -167,7 +167,7 @@ export const testimonials = [
     quote:
       "Creative",
     name: "Possesses intermediate proficiency in design and editing, with hands-on experience using tools such as DaVinci Resolve, Figma, and Canva",
-    title: "experience in internship, small scale events and University level activities",
+    // title: "experience in internship, small scale events and University level activities",
   },
   // {
   //   quote:

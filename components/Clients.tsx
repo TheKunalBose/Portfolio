@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TextRevealCard } from "./ui/TextRevealCard"
+
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 

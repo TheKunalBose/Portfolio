@@ -125,49 +125,55 @@ export const testimonials = [
     quote:
       "Full-Stack Web Development",
     name: "Proficient in building scalable web applications using React.js for the frontend and Node.js for the backend, following modular and RESTful architecture.",
+    title: "experience in internship, small scale events and University level activities",
    
   },
   { 
     quote:
       "Infrastructure as Code (IaC)",
     name: "Experienced in using Terraform to provision and manage cloud infrastructure declaratively, ensuring consistency and repeatability.",
-    // title: ".",
+    title: ".",
   },
   { 
     quote:
       "Containerization & Orchestration",
     name: "Hands-on expertise with Docker for containerizing applications and Kubernetes for orchestrating multi-container workloads in cloud environments.",
+    title: "experience in internship, small scale events and University level activities",
     
   },
   { 
     quote:
       "CI/CD Automation",
     name: "Implemented automated deployment pipelines using Jenkins, enabling continuous integration and delivery across development workflows.",
+    title: "experience in internship, small scale events and University level activities",
    
   },
   { 
     quote:
       "Cloud Platforms (AWS & Azure)",
     name: "Worked with both AWS and Azure platforms for deploying infrastructure and applications; experienced with services like EC2, S3, EKS, IAM (AWS) and Azure Resource Manager, AKS, and DevOps Pipelines (Azure).",
+    title: "experience in internship, small scale events and University level activities",
    
   },
   { 
     quote:
       "Version Control (Git & GitHub)",
     name: "Proficient in using Git for source code management and GitHub for collaborative development and CI/CD integration.",
+    title: "experience in internship, small scale events and University level activities",
     
   },
   { 
     quote:
       "Monitoring & Logging",
     name: "Integrated basic monitoring tools and logging solutions to track application performance and ensure system reliability.",
+    title: "experience in internship, small scale events and University level activities",
     
   },
   {
     quote:
       "Creative",
     name: "Possesses intermediate proficiency in design and editing, with hands-on experience using tools such as DaVinci Resolve, Figma, and Canva",
-    // title: "experience in internship, small scale events and University level activities",
+    title: "experience in internship, small scale events and University level activities",
   },
   // {
   //   quote:

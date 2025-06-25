@@ -75,7 +75,7 @@ export const projects = [
     title: "StackForge-Terraform-Infra",
     des: "An AWS EKS-based infrastructure built with Terraform. Features modular architecture, automated Jenkins setup, and CI/CD pipeline for seamless Kubernetes deployments.",
     img: "",
-    iconLists: ["terraform.png","AWS.png","Jenkins.svg","YAML logo.png"],
+    iconLists: ["terraform.png","aws.png","Jenkins.svg","YAML logo.png"],
     link: "https://github.com/TheKunalBose/StackForge-Terraform-Infra",
   },
   {
@@ -83,7 +83,7 @@ export const projects = [
     title: "StackForge-k8s-Deployement ",
     des: "Production-grade Kubernetes deployment for StackForge on AWS EKS with secure secrets, PostgreSQL, Ingress routing, health checks, and rolling updates.",
     img: "",
-    iconLists: ["k8s.png","EKS.png","AWS.png","re.svg","Node.png","Redis.png","PostgreSQL.png"],
+    iconLists: ["k8s.png","EKS.png","aws.png","re.svg","Node.png","Redis.png","PostgreSQL.png"],
     link: "https://github.com/TheKunalBose/StackForge-k8s-Deployement",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     title: "AWS Multi-Region Architecture",
     des: "an active-active AWS multi-region architecture using Terraform. It includes modular infrastructure, automated Jenkins installation, and a CI/CD pipeline for seamless deployment",
     img: "awsbg.jpg",
-    iconLists: ["AWS.png", "terraform.png", "Jenkins.svg", "Bash.svg", "/Ubuntu.png"],
+    iconLists: ["aws.png", "terraform.png", "Jenkins.svg", "Bash.svg", "/Ubuntu.png"],
     link: "https://github.com/TheKunalBose/AWS-Architechure-MultiRegion",
   },
   {

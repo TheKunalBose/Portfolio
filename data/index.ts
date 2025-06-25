@@ -231,7 +231,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "IT Intern @ TruKKer\nJune 2023 - December 2023",
+    title: "IT Intern @ TruKKer <br />June 2023 - December 2023",
     desc: "Developed asset analysis software, an internal React dashboard, and department-wide designs while handling daily tasks.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",

@@ -40,7 +40,10 @@ const Experience = () => {
                   {card.title}
                 </h1>
                 <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
+                  {card.desc1}
+                </p>
+                <p className="text-start text-white-100 mt-3 font-semibold">
+                  {card.desc2}
                 </p>
               </div>
             </div>

@@ -15,9 +15,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="We’ll begin by understanding the problem space — defining your goals, analyzing system requirements, and identifying pain points. Whether it’s a cloud infrastructure setup, CI/CD pipeline, or full-stack solution, I make sure we’re aligned from day one with a clear roadmap"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,9 +26,7 @@ const Approach = () => {
         <Card
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Once we lock the strategy, I architect robust, scalable systems — from cloud resource planning to infrastructure-as-code design. You’ll get regular updates as I implement DevOps best practices, automate workflows, and shape reliable development pipelines tailored to your needs"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -50,9 +46,7 @@ const Approach = () => {
         <Card
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="Here’s where everything comes together. I bring your solution to life using efficient coding, automation, and cloud-native deployments. Once deployed, I ensure smooth operations, active monitoring, and scalability — ready for real-world traffic and future growth"
         >
           <CanvasRevealEffect
             animationSpeed={3}

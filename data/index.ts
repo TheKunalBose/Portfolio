@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I thrive on close client collaboration, driven by transparent and open communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Seamlessly adapt to time zones for effective collaboration",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Dev tech stack",
+    description: "Improving My",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Driven by a love for automation, cloud computing, and efficient development workflows",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -98,7 +98,7 @@ export const projects = [
     id: 4,
     title: "Shoppy_dashboard",
     des: "Fully responsive and customisable Admin dashboard created using advanced Reactjs, React Context APIs, Syncfusion and Tailwind CSS",
-    img: "Shoppy.png",
+    img: "shp1.png",
     iconLists: ["re.svg", "/tail.svg", "JavaScript.svg", "Syncfusion.png"],
     link: "https://github.com/TheKunalBose/Shoppy_dashboard",
   },
@@ -124,69 +124,56 @@ export const testimonials = [
   {
     quote:
       "Full-Stack Web Development",
-    name: "Proficient in building scalable web applications using React.js for the frontend and Node.js for the backend, following modular and RESTful architecture.",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Proficient in building scalable web applications using React.js for the frontend and Node.js for the backend, following modular and RESTful architecture",
+    title: "Frontend-Backend Integration | REST APIs",
    
   },
   { 
     quote:
       "Infrastructure as Code (IaC)",
-    name: "Experienced in using Terraform to provision and manage cloud infrastructure declaratively, ensuring consistency and repeatability.",
-    title: ".",
+    name: "Experienced in using Terraform to provision and manage cloud infrastructure declaratively, ensuring consistency and repeatability",
+    title: "Terraform Modules | Cloud Provisioning",
   },
   { 
     quote:
       "Containerization & Orchestration",
-    name: "Hands-on expertise with Docker for containerizing applications and Kubernetes for orchestrating multi-container workloads in cloud environments.",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Hands-on expertise with Docker for containerizing applications and Kubernetes for orchestrating multi-container workloads in cloud environments",
+    title: "Docker & Kubernetes Workflows",
     
   },
   { 
     quote:
       "CI/CD Automation",
-    name: "Implemented automated deployment pipelines using Jenkins, enabling continuous integration and delivery across development workflows.",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Implemented automated deployment pipelines using Jenkins, enabling continuous integration and delivery across development workflows",
+    title: "Jenkins Pipelines | Deployment Automation",
    
   },
   { 
     quote:
       "Cloud Platforms (AWS & Azure)",
-    name: "Worked with both AWS and Azure platforms for deploying infrastructure and applications; experienced with services like EC2, S3, EKS, IAM (AWS) and Azure Resource Manager, AKS, and DevOps Pipelines (Azure).",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Worked with both AWS and Azure platforms for deploying infrastructure and applications; experienced with services like EC2, S3, EKS, IAM (AWS) and Azure Resource Manager, AKS, and DevOps Pipelines (Azure)",
+    title: "AWS & Azure Cloud Deployments",
    
   },
   { 
     quote:
       "Version Control (Git & GitHub)",
-    name: "Proficient in using Git for source code management and GitHub for collaborative development and CI/CD integration.",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Proficient in using Git for source code management and GitHub for collaborative development and CI/CD integration",
+    title: "Branching | Pull Requests | Git Workflows",
     
   },
   { 
     quote:
       "Monitoring & Logging",
-    name: "Integrated basic monitoring tools and logging solutions to track application performance and ensure system reliability.",
-    title: "experience in internship, small scale events and University level activities",
-    
+    name: "Integrated basic monitoring tools and logging solutions to track application performance and ensure system reliability",
+    title: "System Health | Logs & Metrics",
   },
   {
     quote:
       "Creative",
-    name: "Possesses intermediate proficiency in design and editing, with hands-on experience using tools such as DaVinci Resolve, Figma, and Canva",
-    title: "experience in internship, small scale events and University level activities",
+    name: "Skilled in visual design, video editing, and UI layout creation with a focus on clarity and storytelling across platforms",
+    title: "Design & Editing | Tools: Figma, Canva, Davinchi Resolve",
   },
-  // {
-  //   quote:
-  //     "Update 4",
-  //   name: "Michael Johnson44",
-  //   // title: "Director of AlphaStream Technologies",
-  // },
-  // {
-  //   quote:
-  //     "Update 5",
-  //   name: "Michael Johnson55",
-  //   // title: "Director of AlphaStream Technologies",
-  // },
 ];
 
 export const companies = [
@@ -231,8 +218,9 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "IT Intern @ TruKKer <br />June 2023 - December 2023",
-    desc: "Developed asset analysis software, an internal React dashboard, and department-wide designs while handling daily tasks.",
+    title: "IT Intern @ TruKKer ",
+    desc1: "June 2023 - December 2023",
+    desc2: "Developed asset analysis software • an internal React dashboard • managed department-wide designs • while handling daily tasks",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -246,7 +234,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg", link: "https://x.com/KunalBo88979391"
+    img: "/x.png", link: "https://x.com/KunalBo88979391"
   },
   {
     id: 3,

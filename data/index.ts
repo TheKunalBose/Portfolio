@@ -203,16 +203,22 @@ export const companies = [
     nameImg: "/Jenkins.svg",
   },
   {
+    id: 4,
+    name: "terraform",
+    img: "/terraform.png",
+    nameImg: "/streamName.svg",
+  },
+  {
     id: 5,
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
   {
-    id: 4,
-    name: "terraform",
-    img: "/terraform.png",
-    nameImg: "/streamName.svg",
+    id: 6,
+    name: "kubernetes",
+    img: "/k8s.png",
+    nameImg:"/k8s.png"
   },
   {
     id: 3,
@@ -225,7 +231,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Information Technology Intern",
+    title: "Information Technology Intern at TruKKer",
     desc: "Developed asset analysis software, an internal React dashboard, and department-wide designs while handling daily tasks.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",

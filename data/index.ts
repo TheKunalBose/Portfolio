@@ -75,7 +75,7 @@ export const projects = [
     title: "StackForge-Terraform-Infra",
     des: "An AWS EKS-based infrastructure built with Terraform. Features modular architecture, automated Jenkins setup, and CI/CD pipeline for seamless Kubernetes deployments.",
     img: "sftf.png",
-    iconLists: ["terraform.png","aws.png","Jenkins.svg","YAML logo.png"],
+    iconLists: ["terraform.png","aws.png","Jenkins.svg",],
     link: "https://github.com/TheKunalBose/StackForge-Terraform-Infra",
   },
   {

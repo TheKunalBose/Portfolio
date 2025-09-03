@@ -224,6 +224,14 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
+  {
+    id: 2,
+    title: "AI/ML Intern @ Softfoora ",
+    desc1: "September 2025 - March 2025",
+    desc2: "Currently Working @ Softfoora services",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 
 ];
 

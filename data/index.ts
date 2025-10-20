@@ -228,7 +228,7 @@ export const workExperience = [
     id: 2,
     title: "AI/ML Intern @ ForaSoftware ",
     desc1: "September 2025 - March 2026",
-    desc2: "Currently Working @ ForaSoftware Group",
+    desc2: "Developing AI-driven platform • using Azure AI Foundry • RAG pipelines • FastAPI • React • Azure DevOps • CI/CD workflows",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

@@ -10,19 +10,39 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import SectionReveal from "@/components/ui/SectionReveal";
 
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-      <div className="max-w-7xl w-full">
+      {/* ── Animated moving starfield background ── */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="starfield-layer starfield-1" />
+        <div className="starfield-layer starfield-2" />
+        <div className="starfield-layer starfield-3" />
+      </div>
+
+      <div className="max-w-7xl w-full relative z-10">
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience />
-        <Approach />
-        <Footer />
+        <SectionReveal>
+          <Grid />
+        </SectionReveal>
+        <SectionReveal>
+          <RecentProjects />
+        </SectionReveal>
+        <SectionReveal>
+          <Clients />
+        </SectionReveal>
+        <SectionReveal>
+          <Experience />
+        </SectionReveal>
+        <SectionReveal>
+          <Approach />
+        </SectionReveal>
+        <SectionReveal>
+          <Footer />
+        </SectionReveal>
       </div>
     </main>
   );

@@ -83,3 +83,145 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+/* Blinking green dot for "Currently Building" */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 6px rgba(74, 222, 128, 0);
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Rotating text fade */
+@keyframes fade-slide-up {
+  0% { opacity: 0; transform: translateY(8px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-8px); }
+}
+
+/* Infinite marquee scroll for hero tech ticker */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ── Animated starfield background ── */
+.starfield-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  animation: starfield-scroll linear infinite;
+}
+
+/* Layer 1 — dense tiny + small stars, fast drift */
+.starfield-1 {
+  background-image:
+    radial-gradient(1px 1px at 2% 8%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 7% 25%, rgba(203,172,249,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 11% 48%, rgba(108,180,238,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 15% 72%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 18% 15%, rgba(203,172,249,0.55) 50%, transparent 50%),
+    radial-gradient(2px 2px at 22% 38%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 26% 62%, rgba(108,180,238,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 30% 85%, rgba(203,172,249,0.45) 50%, transparent 50%),
+    radial-gradient(3px 3px at 33% 5%, rgba(255,255,255,0.35) 50%, transparent 50%),
+    radial-gradient(1px 1px at 37% 30%, rgba(108,180,238,0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 41% 55%, rgba(203,172,249,0.6) 50%, transparent 50%),
+    radial-gradient(2px 2px at 45% 78%, rgba(255,255,255,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 48% 18%, rgba(108,180,238,0.55) 50%, transparent 50%),
+    radial-gradient(1px 1px at 52% 42%, rgba(203,172,249,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 56% 68%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 60% 92%, rgba(108,180,238,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 63% 12%, rgba(203,172,249,0.55) 50%, transparent 50%),
+    radial-gradient(1px 1px at 67% 35%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 71% 58%, rgba(108,180,238,0.4) 50%, transparent 50%),
+    radial-gradient(3px 3px at 75% 82%, rgba(203,172,249,0.3) 50%, transparent 50%),
+    radial-gradient(1px 1px at 78% 22%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 82% 48%, rgba(108,180,238,0.55) 50%, transparent 50%),
+    radial-gradient(1px 1px at 85% 70%, rgba(203,172,249,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 89% 5%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 92% 32%, rgba(108,180,238,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 95% 55%, rgba(203,172,249,0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 98% 88%, rgba(255,255,255,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 4% 45%, rgba(108,180,238,0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 14% 90%, rgba(255,255,255,0.55) 50%, transparent 50%),
+    radial-gradient(1px 1px at 58% 3%, rgba(203,172,249,0.4) 50%, transparent 50%);
+  background-size: 100% 50%;
+  animation-duration: 18s;
+}
+
+/* Layer 2 — mixed medium stars + a few brights */
+.starfield-2 {
+  background-image:
+    radial-gradient(2px 2px at 3% 12%, rgba(203,172,249,0.5) 50%, transparent 50%),
+    radial-gradient(3px 3px at 9% 38%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(2px 2px at 14% 65%, rgba(108,180,238,0.55) 50%, transparent 50%),
+    radial-gradient(1px 1px at 19% 28%, rgba(203,172,249,0.6) 50%, transparent 50%),
+    radial-gradient(4px 4px at 24% 85%, rgba(255,255,255,0.25) 50%, transparent 50%),
+    radial-gradient(2px 2px at 28% 5%, rgba(108,180,238,0.45) 50%, transparent 50%),
+    radial-gradient(3px 3px at 33% 48%, rgba(203,172,249,0.35) 50%, transparent 50%),
+    radial-gradient(2px 2px at 38% 72%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 42% 18%, rgba(108,180,238,0.55) 50%, transparent 50%),
+    radial-gradient(2px 2px at 47% 55%, rgba(203,172,249,0.45) 50%, transparent 50%),
+    radial-gradient(3px 3px at 52% 32%, rgba(255,255,255,0.35) 50%, transparent 50%),
+    radial-gradient(2px 2px at 57% 88%, rgba(108,180,238,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 62% 8%, rgba(203,172,249,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 66% 42%, rgba(255,255,255,0.45) 50%, transparent 50%),
+    radial-gradient(4px 4px at 71% 68%, rgba(108,180,238,0.2) 50%, transparent 50%),
+    radial-gradient(2px 2px at 76% 15%, rgba(203,172,249,0.55) 50%, transparent 50%),
+    radial-gradient(3px 3px at 80% 52%, rgba(255,255,255,0.3) 50%, transparent 50%),
+    radial-gradient(2px 2px at 85% 78%, rgba(108,180,238,0.45) 50%, transparent 50%),
+    radial-gradient(1px 1px at 90% 25%, rgba(203,172,249,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 94% 62%, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 6% 52%, rgba(108,180,238,0.6) 50%, transparent 50%),
+    radial-gradient(2px 2px at 50% 95%, rgba(203,172,249,0.35) 50%, transparent 50%);
+  background-size: 100% 50%;
+  animation-duration: 28s;
+}
+
+/* Layer 3 — bright large stars + scattered tiny ones */
+.starfield-3 {
+  background-image:
+    radial-gradient(5px 5px at 10% 20%, rgba(203,172,249,0.2) 50%, transparent 50%),
+    radial-gradient(1px 1px at 16% 45%, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(4px 4px at 25% 70%, rgba(108,180,238,0.18) 50%, transparent 50%),
+    radial-gradient(1px 1px at 32% 10%, rgba(203,172,249,0.55) 50%, transparent 50%),
+    radial-gradient(5px 5px at 40% 35%, rgba(255,255,255,0.15) 50%, transparent 50%),
+    radial-gradient(2px 2px at 48% 60%, rgba(108,180,238,0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 55% 82%, rgba(203,172,249,0.5) 50%, transparent 50%),
+    radial-gradient(4px 4px at 62% 25%, rgba(255,255,255,0.2) 50%, transparent 50%),
+    radial-gradient(1px 1px at 70% 50%, rgba(108,180,238,0.45) 50%, transparent 50%),
+    radial-gradient(5px 5px at 78% 75%, rgba(203,172,249,0.15) 50%, transparent 50%),
+    radial-gradient(1px 1px at 84% 8%, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(3px 3px at 90% 42%, rgba(108,180,238,0.25) 50%, transparent 50%),
+    radial-gradient(1px 1px at 95% 65%, rgba(203,172,249,0.45) 50%, transparent 50%),
+    radial-gradient(4px 4px at 5% 88%, rgba(255,255,255,0.18) 50%, transparent 50%),
+    radial-gradient(1px 1px at 45% 2%, rgba(108,180,238,0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 68% 92%, rgba(203,172,249,0.35) 50%, transparent 50%);
+  background-size: 100% 50%;
+  animation-duration: 45s;
+}
+
+@keyframes starfield-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

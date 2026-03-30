@@ -70,69 +70,206 @@ export const InfiniteMovingCards = ({
     }
   };
   return (
-    <div
-      ref={containerRef}
-      className={cn(
-        // max-w-7xl to w-screen
-        "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
-    >
-      <ul
-        ref={scrollerRef}
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .floating-glass-card {
+           /* Box model & baseline */
+           position: relative;
+           overflow: hidden;
+           border-radius: 20px;
+           width: 85vw;
+           max-width: 450px;
+           padding: 1.5rem;
+           margin: 0;
+           flex-shrink: 0;
+           border: 1px solid rgba(255, 255, 255, 0.05);
+           
+           /* Layered Background */
+           background-color: rgba(4, 7, 29, 0.9);
+           backdrop-filter: blur(12px);
+           
+           /* Box Shadow */
+           box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+           
+           /* Transitions */
+           transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.35s ease;
+           
+           /* Flexbox for inner layout */
+           display: flex;
+           flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+           .floating-glass-card {
+             width: 600px;
+             max-width: none;
+             padding: 2.5rem;
+           }
+        }
+
+        /* Top Glowing Line */
+        .floating-glass-card::before {
+           content: '';
+           position: absolute;
+           top: 0; left: 0; right: 0;
+           height: 2px;
+           background: linear-gradient(90deg, transparent, #CBACF9, transparent);
+           opacity: 0.2;
+           transition: opacity 0.35s ease;
+           z-index: 2;
+        }
+
+        /* Subtle Inner Glow on Hover */
+        .floating-glass-card::after {
+           content: '';
+           position: absolute;
+           inset: 0;
+           background: radial-gradient(ellipse at top, rgba(203,172,249,0.1) 0%, transparent 70%);
+           opacity: 0;
+           transition: opacity 0.35s ease;
+           pointer-events: none;
+           z-index: 1;
+        }
+
+        /* Hover States */
+        .floating-glass-card:hover {
+           transform: translateY(-4px);
+           box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+           border-color: rgba(203,172,249,0.15);
+        }
+        .floating-glass-card:hover::before {
+           opacity: 1;
+        }
+        .floating-glass-card:hover::after {
+           opacity: 1;
+        }
+
+        /* Noise Texture */
+        .card-noise {
+           position: absolute;
+           inset: -50%;
+           width: 200%;
+           height: 200%;
+           opacity: 0.02;
+           pointer-events: none;
+           z-index: 0;
+        }
+
+        /* Insight Header Layout */
+        .insight-header {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           position: relative;
+           z-index: 1;
+           margin-bottom: 1.25rem;
+        }
+
+        /* Glowing Dot Indicator */
+        .glow-dot {
+           width: 8px;
+           height: 8px;
+           border-radius: 50%;
+           background-color: #CBACF9;
+           box-shadow: 0 0 10px #CBACF9, 0 0 20px rgba(203,172,249,0.4);
+           flex-shrink: 0;
+        }
+
+        /* Insight Header Text */
+        .insight-title {
+           font-family: inherit;
+           font-weight: 700;
+           font-size: 1.15rem;
+           color: #E2E8F0;
+           letter-spacing: 0.02em;
+           margin: 0;
+           line-height: 1.3;
+        }
+
+        @media (min-width: 768px) {
+           .insight-title {
+              font-size: 1.35rem;
+           }
+        }
+
+        /* Main Description */
+        .insight-description {
+           font-family: inherit;
+           font-size: 0.95rem;
+           line-height: 1.7;
+           color: #BEC1DD;
+           position: relative;
+           z-index: 1;
+           margin: 0;
+        }
+
+        /* Divider Line */
+        .card-divider {
+           width: 100%;
+           height: 1px;
+           background: linear-gradient(to right, rgba(203,172,249,0.25), transparent);
+           margin: 1.5rem 0 1.25rem;
+           position: relative;
+           z-index: 1;
+        }
+
+        /* Tags Area */
+        .insight-tags {
+           font-family: inherit;
+           font-weight: 600;
+           font-size: 0.75rem;
+           color: #CBACF9;
+           letter-spacing: 0.05em;
+           text-transform: uppercase;
+           position: relative;
+           z-index: 1;
+           line-height: 1.4;
+        }
+      `}} />
+      <svg aria-hidden="true" className="pointer-events-none fixed isolate z-50 opacity-0 mix-blend-soft-light w-0 h-0">
+        <filter id="noiseFilter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+        </filter>
+      </svg>
+      <div
+        ref={containerRef}
         className={cn(
-          // change gap-16
-          " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          // max-w-7xl to w-screen
+          "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+          className
         )}
       >
-        {items.map((item, idx) => (
-          <li
-            //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0
-             flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]"
-            style={{
-              //   background:
-              //     "linear-gradient(180deg, var(--slate-800), var(--slate-900)", //remove this one
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
-            // change to idx cuz we have the same name
-            key={idx}
-          >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              {/* change text color, text-lg */}
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                {/* add this div for the profile img */}
-                {/* <div className="me-3">
-                  <img src="/profile.svg" alt="profile" />
-                </div> */}
-                <span className="flex flex-col gap-1">
-                  {/* change text color, font-normal to font-bold, text-xl */}
-                  <span className="text-xl font-bold leading-[1.6] text-white">
-                    {item.name}
-                  </span>
-                  {/* change text color */}
-                  <span className=" text-sm leading-[1.6] text-white-200 font-normal">
-                    {item.title}
-                  </span>
-                </span>
+        <ul
+          ref={scrollerRef}
+          className={cn(
+            // change gap-16
+            " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
+            start && "animate-scroll ",
+            pauseOnHover && "hover:[animation-play-state:paused]"
+          )}
+        >
+          {items.map((item, idx) => (
+            <li
+              className="floating-glass-card"
+              key={idx}
+            >
+              <div className="card-noise" style={{ filter: 'url(#noiseFilter)' }}></div>
+              
+              <div className="insight-header">
+                 <div className="glow-dot" />
+                 <h3 className="insight-title">{item.quote}</h3>
               </div>
-            </blockquote>
-          </li>
-        ))}
-      </ul>
-    </div>
+              
+              <p className="insight-description">{item.name}</p>
+              
+              <div className="mt-auto">
+                <div className="card-divider"></div>
+                <div className="insight-tags">{item.title}</div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };

@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { testimonials } from "@/data";
 
 // ─── Skills data with embedded tool logos ─────────────────────────
 const skillCards = [
@@ -214,10 +216,12 @@ const Clients = () => {
         <span className="text-purple"> Vault</span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-14 px-2">
-        {skillCards.map((skill, index) => (
-          <SkillCard key={index} skill={skill} index={index} />
-        ))}
+      <div className="flex flex-col items-center max-lg:mt-10 mt-14 overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
       </div>
     </section>
   );

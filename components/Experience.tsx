@@ -7,10 +7,28 @@ import { motion } from "framer-motion";
 const timelineData = [
   {
     id: 1,
+    role: "FullStack AI Engineer",
+    company: "ForaSoftware",
+    period: "Mar 2026 — Present",
+    isCurrent: true,
+    accent: "#CBACF9",
+    logo: "/exp1.svg",
+    description:
+      "FullStack AI Engineer specialising in DevOps, managing infrastructure and deployments across various teams with a focus on automation, monitoring, and AI integrations.",
+    impacts: [
+      "Built large-scale infrastructure with a Python backend, RBAC, 30+ REST APIs, protected routes, and Azure services.",
+      "Successful deployments, infrastructure monitoring, and versioning.",
+      "Managed CI/CD pipelines, DevOps, and Infrastructure as Code (IaC).",
+      "Wrote shell scripting to automate deployments and system management."
+    ],
+    tools: ["Python", "FastAPI", "React", "RAG", "LLMs", "Docker", "Terraform"],
+  },
+  {
+    id: 2,
     role: "AI/ML Intern",
     company: "ForaSoftware",
-    period: "Sep 2025 — Present",
-    isCurrent: true,
+    period: "Sep 2025 — Mar 2026",
+    isCurrent: false,
     accent: "#CBACF9",
     logo: "/exp4.svg",
     description:
@@ -23,13 +41,13 @@ const timelineData = [
     tools: ["Azure", "FastAPI", "React", "RAG", "CI/CD"],
   },
   {
-    id: 2,
+    id: 3,
     role: "IT Intern",
     company: "TruKKer",
     period: "Jun 2023 — Dec 2023",
     isCurrent: false,
     accent: "#6CB4EE",
-    logo: "/exp1.svg",
+    logo: "/exp2.svg",
     description:
       "Developed internal tools and managed department-wide design systems for the logistics platform.",
     impacts: [
@@ -45,9 +63,11 @@ const timelineData = [
 const TimelineCard = ({
   item,
   index,
+  isLast,
 }: {
   item: (typeof timelineData)[0];
   index: number;
+  isLast?: boolean;
 }) => (
   <motion.div
     className="relative pl-8 md:pl-12 pb-12 last:pb-0 group/timeline"
@@ -64,9 +84,9 @@ const TimelineCard = ({
     <div
       className="absolute left-[11px] md:left-[15px] top-3 bottom-0 w-[2px]"
       style={{
-        background: index === timelineData.length - 1
+        background: (isLast ?? index === timelineData.length - 1)
           ? `linear-gradient(180deg, ${item.accent}40, transparent)`
-          : `${item.accent}25`,
+          : `${item.accent}40`,
       }}
     />
 
@@ -196,16 +216,32 @@ const TimelineCard = ({
 // ═══════════════════════════════════════════════════════════════════
 
 const Experience = () => {
+  const fullStackItem = timelineData[0];
+  const aimlInternItem = timelineData[1];
+  const trukkerItem = timelineData[2];
+
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full" id="experience">
       <h1 className="heading">
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="max-w-2xl mx-auto mt-14">
-        {timelineData.map((item, index) => (
-          <TimelineCard key={item.id} item={item} index={index} />
-        ))}
+      <div className="max-w-6xl mx-auto mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 px-5">
+        
+        {/* Left Column: TruKKer */}
+        <div className="flex flex-col">
+          <TimelineCard item={trukkerItem} index={0} isLast={true} />
+        </div>
+
+        {/* Right Column: ForaSoftware (Promotion track) */}
+        <div className="flex flex-col">
+          <TimelineCard item={aimlInternItem} index={1} isLast={false} />
+          
+          <div className="-mt-4">
+            <TimelineCard item={fullStackItem} index={2} isLast={true} />
+          </div>
+        </div>
+
       </div>
     </div>
   );

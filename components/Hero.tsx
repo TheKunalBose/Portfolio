@@ -160,7 +160,7 @@ const Hero = () => {
             className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl"
             variants={fadeUpVariant}
           >
-            Final year B.Tech Computer Science student, currently working as a FullStack AI Engineer (Specializing in DevOps) @ ForaSoftware — passionate AI/Ml and DevOps enthusiast
+            Final year B.Tech Computer Science student, currently working as a FullStack AI Engineer (Specializing in DevOps) @ ForaSoftware — passionate AI/ML and DevOps enthusiast
             based in India
           </motion.p>
 

@@ -144,7 +144,7 @@ const Hero = () => {
             className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-96"
             variants={fadeUpVariant}
           >
-            I build cloud-native apps & DevOps pipelines that ship fast
+            From infrastructure to automation
           </motion.p>
 
           {/* Name — TextGenerateEffect already animates word-by-word */}

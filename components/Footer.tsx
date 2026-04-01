@@ -67,7 +67,7 @@ const Footer = () => {
               Kunal Bose
             </span>
             <span className="text-xs text-white/30">
-              DevOps · Cloud · Full-Stack
+              AI/ML · DevOps · Full-Stack
             </span>
           </div>
 
